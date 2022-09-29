@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="registrationstyle.css">
+<meta name="viewport" content="width=device-width", initial-scale=1.0">
+
+</head>
+
+<body>
+<!--div element for all other elements on the page-->
+<div class="wrapper">
+<!--header div tag-->
+
+	<div class="header">
+	<span class="lg-view"><a href="index.html" style="text-decoration:none; color:black;">PcMegaStore</a></span>
+	<span class="sm-view"><a href="index.html" style="text-decoration:none; color:black;">PC</a></span>	<!--Store logo-->
+		<div class="iconcon">
+		<a href="orderform.html"><img id="icon" src="Images/cart.png" alt="ShoppingCart"><!--basket icon-->
+		<a href="orderform.html" style="text-decoration:none; color:black;">CART</a><!--basket icon-->
+		</div>
+		
+		<div class="iconcon">
+		<a href="registration.html"><img id="icon" src="Images/user.png" alt="ShoppingCart"></a>
+		<a href="registration.html" style="text-decoration:none; color:black;">SIGN IN</a><!--sign in icon-->
+		</div>
+	</div>
+<!--middle,content div tag with img and details of a product-->
+	<div class="navtop">
+		<ul class="topnav">		<!--nav bar-->
+		<li><a href="index.html">Home</a></li>
+		<li><a href="products.html">products</a></li>
+		<li><a href="slideshow.html">Gallery</a></li>
+		<li><a href="report.html" >Report</a></li>
+		</ul>
+	</div>
+
+	<div class="col">
+	<h1>Register</h1>
+	<form action="/action_page.php">
+	<fieldset>
+		<legend>Personal information:</legend>
+		<label>First Name:*</label>
+		<input type="text" name="fname" placeholder="John" maxlength="15" autofocus required><br><br>
+		<label>Last Name:*</label>
+		<input type="text" name="lname" placeholder="Doe" maxlength="15" required><br><br>	<!--Name input-->
+		<label>Date of Birth:*</label>
+		<input type="date" name="bday" required><br><br><!--Date of birth-->
+		<label>Gender:</label><br><!--Choose sex-->
+		<input type="radio" name="gender" value="male"> Male<br>
+		<input type="radio" name="gender" value="female"> Female<br>
+		<input type="radio" name="gender" value="other"> Other
+	</fieldset><br><br>
+	<label>Country:*</label><br>
+	<select name="country" required>
+    <option value="UK">United Kingdom</option>
+    <option value="RoI">Republic of Ireland</option></select><br><br>    
+	<label >Adress:*</label><br>
+	<input type="text" name="Adress:"maxlength="20" required><br><br>
+	<label>Postcode:*</label><br> <!--Adress-->
+	<input type="text" name="Postcode:" required><br><br><!--Postcode-->
+	<label>Email:*</label><br>	<!--Last name input-->
+	<input type="email" name="email" placeholder="sample@mail.com" maxlength="20" required></br><br><!--Email input-->
+	<label>Password:*</label><br>
+	<input type="password" id="pass1" onkeyup="getValue()" required></br><br><!--Password-->
+	<label>Repeat Password:*</label><br>
+	<input type="password" id="pass2" required><br><br><!--Repeat password-->
+
+	<!--Captcha verification-->
+	<input type="submit" value="Submit"><br><!--Submit button-->
+	</form>
+	</div>
+
+<!--footer div tag with copyright and additional info-->
+	<div class="footer">
+	<div style="float;right">Designed by Hrvoje Tomic (N0825071)<br>January 2020 &copy;</div><center><a href="index.html" style="text-decoration:none; color:black;">Home<a></center>
+
+	</div>
+</div>
+</body>
+</html>
